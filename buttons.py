@@ -13,7 +13,7 @@ class ToolsPanel(bpy.types.Panel):
     bl_category = "bli"
     
     number = 1
- 
+    
     def draw(self, context):
         layout = self.layout
         
@@ -28,6 +28,7 @@ class ToolsPanel(bpy.types.Panel):
         col = split.column()
         sub = col.column(align=True)
         sub.operator("object.dupli_x")
+
 
 class ObjectMoveX(bpy.types.Operator):
     """My Object Duplicate Script"""      # blender will use this as a tooltip for menu items and buttons.
