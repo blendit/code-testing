@@ -2,6 +2,8 @@ language: python
 python: "3.4"
 
 install:
-  - "pip install pep8 --use-mirrors"
+  - "pip install pep8"
 
 before_script: "pep8 . --ignore=W293,E501"
+
+script: ls
